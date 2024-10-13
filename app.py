@@ -15,7 +15,7 @@ def index():
             area = float(area)
         except:
             area = 0
-            message += 'Некорректный ввод. Установлено значение по умалчанию.'
+            message += 'Некорректный ввод. Установлено значение по умолчанию.'
         scaled_area = preprocess(area)
         cost = process(scaled_area)
         message += f"Стоимость недвижимости {cost} рублей"
